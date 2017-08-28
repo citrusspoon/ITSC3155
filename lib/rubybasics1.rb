@@ -18,32 +18,15 @@ def max_2_sum arr
     arr.sort!
     return arr[-1] + arr[-2]
   end
-    
-    
-    
-    
-    
-    
 end
 
 
 
-
-=begin
-largest = 0
-    secondLargest = 0
-    arr.each do |i|
-      if arr[i] > largest
-        largest = arr[i]
-      elsif arr[i] > secondLargest
-        secondLargest = arr[i]
-      end
-    end
-    return largest + secondLargest
-
-=end
-
 # Part III
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  if arr.empty? || arr.length == 1
+    return false
+  else
+    
+  end
 end
