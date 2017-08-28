@@ -28,8 +28,13 @@ def sum_to_n? arr, n
     return false
   else
     
-    #do the double nested for loop thing
-    
-    
+    for i in 0..arr.length
+      for j in ((i+1)...arr.length)
+        if arr[i] + arr[j] == n
+          return true
+        end
+      end
+    end 
   end
+  return false
 end
