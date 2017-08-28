@@ -1,7 +1,11 @@
 # Lab 1
 # Part I
 def sum arr
-  # YOUR CODE HERE
+  x = 0
+  arr.each do |i|
+    x += i
+  end
+  return x
 end
 
 # Part II
