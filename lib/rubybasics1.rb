@@ -28,5 +28,8 @@ def sum_to_n? arr, n
     return false
   else
     
+    #do the double nested for loop thing
+    
+    
   end
 end
