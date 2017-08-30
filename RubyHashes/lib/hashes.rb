@@ -1,7 +1,16 @@
 # RubyHashes
 # Part I
 def array_2_hash emails, contacts
-    # YOUR CODE HERE
+    x = emails.length
+    contacts2 = Hash.new
+    contacts.each do |key, value|  
+        contacts[key] = emails[x]
+        x = x+1
+    end
+    puts contacts['Bob Smith']
+    return contacts
+    
+    
 end
 
 # Part II
