@@ -29,5 +29,8 @@ end
 
 # Part III
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  if(/^[01]*00$/ =~ (s) || /^0+$/ =~ (s))
+    return true
+  end
+  return false
 end
