@@ -5,15 +5,17 @@ module FunWithStrings
      str = ((str.gsub(/\W/,"").gsub(/\d/,"")).downcase)
    
     return str == str.reverse
-    
-    
-    
-    
-    
-    
+ 
   end
   def count_words
-    # your code here
+    
+    str = self
+    countHash = Hash.new
+    
+    str = ((str.gsub(/\W/,"").gsub(/\d/,"")).downcase)
+    
+    
+    
   end
   def anagram_groups
     # your code here
