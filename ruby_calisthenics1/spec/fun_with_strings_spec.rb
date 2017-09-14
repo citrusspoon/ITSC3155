@@ -41,7 +41,7 @@ describe 'word count', :disabled => false do
   end
 end
 
-describe 'anagram grouping', :disabled => true do
+describe 'anagram grouping', :disabled => false do
   describe 'sanity checks' do
     it 'should work on the empty string [5 points]' do
       expect(''.anagram_groups).to eq([])

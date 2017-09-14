@@ -34,7 +34,29 @@ module FunWithStrings
     
   end
   def anagram_groups
-    # your code here
+    str = self
+    wordArray = []
+    index = 0
+    anagArray = []
+
+
+    str.each_char do |i|
+   
+      if(wordArray[index] == nil)
+        wordArray[index] = ""
+      end
+   
+      if(str[i].eql?(" ")) 
+        index += 1
+      else
+        wordArray[index] << i
+      end
+    end
+
+    anagArray = wordArray.group_by {|word| word.each_char.sort }.values
+    
+    return anagArray
+
   end
 end
 
