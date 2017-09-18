@@ -52,7 +52,7 @@ describe Dessert do
 end
 
 describe JellyBean do
-  describe 'JellyBean getters and setters', :disabled => true do
+  describe 'JellyBean getters and setters', :disabled => false do
     before(:each)  { @jellybean = JellyBean.new('vanilla') }
     
     it 'should contain 5 calories [2.5 points]' do
