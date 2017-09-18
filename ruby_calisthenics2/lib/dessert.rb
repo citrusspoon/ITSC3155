@@ -24,4 +24,12 @@ class JellyBean < Dessert
     @name = flavor + " jelly bean"
     @calories = 5
   end
+  
+  def delicious?
+    if flavor.eql?("licorice")
+      return false
+    end
+    return true
+  end
+  
 end
